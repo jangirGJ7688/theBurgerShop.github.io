@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Bree Serif', serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.3;
+}
+#navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    margin: 10px 20px;
+}
+.logo a img{
+    width:50px;
+    height: 50px;
+    margin: 5px;
+}
+#nav-ul{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0px auto;
+}
+#nav-ul li{
+    font-family: 'Baloo Bhai 2', cursive;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 5px;
+}
+#nav-ul li a{
+    display: block;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#nav-ul li a:hover{
+    color: rgb(102, 98, 98);
+    background-color: rgb(182, 243, 192);
+}
+
+#bttn{
+    margin: 5px auto;
+}
+#bttn input[type="text"]{
+    width: auto;
+    padding: 6px;
+    border: none;
+    font-size: 15px;
+    margin-right: -3px;
+    outline: none;
+}
+#bttn button{
+    margin-left:0px;
+    padding: 6px 8px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:575px;
+    padding: 3px 200px;
+    flex-direction: column;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 168%;
+    width: 100%;
+    background: url('images/pexels-valeria-boltneva-1199957.jpg') no-repeat center/cover;
+    z-index: -3;
+    opacity: 0.9;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    font-size: 2.5rem;
+    color:black;
+    text-align: center;
+}
+.btn{
+    padding: 6px 30px;
+    background-color:transparent;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    margin: 20px;
+}
+.btn:hover{
+    background-color: rgb(226, 219, 226);
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+    font-size: 3.8rem;
+}
+.about{
+    position: relative;
+    top:103px;
+    left: 0px;
+    padding:10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.about::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('images/bg2.jpg') no-repeat center/cover;
+    z-index: -1;
+    opacity: 1;
+}
+.about1{
+    margin:0px 5px;
+    text-align: center;
+    padding: 10px;
+}
+.about1 h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    padding: 2px;
+    color: white;
+}
+.about1 p{
+    font-size: 1.2rem;
+    padding: 10px;
+    color: rgb(197, 192, 192);
+}
+#survices{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 103px;
+    background-color: rgb(195, 222, 233);
+    margin: 10px;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+#survices h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    margin: 10px 20px;
+}
+.dish{
+    /* border: 1px solid red; */
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    width: 30%;
+    text-align: center;
+}
+.box:hover{
+    border: 1px solid #777;
+    border-radius: 10px;
+    
+}
+.box img{
+    height:auto;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+#clint{
+    position: relative;
+    top:98px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#clint::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('images/bg4.jpg') no-repeat center/cover;
+    z-index: -2;
+    opacity: 0.7;
+}
+#clint h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    margin: 10px 20px;
+}
+#clintbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.clint-item{
+    margin: 20px;
+    padding: 10px;
+}
+.clint-item img{
+    width: 150px;
+    height: 150px;
+}
+.contact{
+    position: relative;
+    top:94px;
+    left: 0px;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('images/bg3.jpg') no-repeat center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+.contact h1{
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    margin: 10px 20px;
+    padding: 4px;
+}
+#contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#left{
+    margin: 10px 30px;
+    padding: 40px;
+    color: black;
+    width: 33%;
+}
+#left h1{
+    padding: 10px;
+}
+#left p{
+    padding: 5px;
+}
+#right{
+    margin: 10px auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:50%;
+}
+#right form{
+    width: 70%;
+}
+.form-elements input,
+.form-elements textarea{
+    border: 1px solid black;
+    outline: none;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background: rgb(197, 195, 195);
+    font-family: 'Bree Serif', serif;
+}
+.form-elements label{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: rgb(15, 15, 15);
+}
+footer{
+    position: relative;
+    top:100px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}

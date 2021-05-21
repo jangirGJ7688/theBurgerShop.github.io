@@ -1,0 +1,80 @@
+
+@media only screen and (max-width: 500px)
+{
+    .dish{
+        flex-direction: column;
+    }
+    .form-elements label{
+        font-size: 0.8rem;
+    }
+    .form-elements input,
+    .form-elements textarea{
+        padding: 0.1rem;
+        background-color: white;
+    }
+}
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 5px;
+}
+#navbar input{
+    margin: auto;
+}
+#bttn input[type="text"]{
+    width: 110px;
+}
+#bttn button{
+    margin: 0px 0px;
+}
+#home{
+    padding: 3px 50px;
+}
+#contact-item{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left{
+    margin: 5px 0px;
+    padding: 10px;
+    width: 100%;
+}
+#right{
+    width: 50%;
+    margin: 2px 50px;
+}
+#home p{
+    font-size: 1.5rem;
+    color: white;
+}
+.h-primary{
+    font-size: 2.5rem;
+}
+#home h1{
+    color: white;
+}
+#home button{
+    font-size: 1.3rem;
+    padding: 5px 8px;
+    background-color: yellowgreen;
+    color: white;
+}
+.about1 h1{
+    color: white;
+}
+#clintbox img{
+    width: 100px;
+    height: 100px;
+}
+#right form{
+    width: 80%;
+}
+.about{
+    padding: 5px 10px;
+}
+.box{
+    width: 90%;
+}
